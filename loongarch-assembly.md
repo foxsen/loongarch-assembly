@@ -122,4 +122,5 @@ main:  # 程序入口
 
 ## 代码案例
 
+参见[hello-world](./hello-world.S)和[bubble-sort](./hello-world.S)
 
