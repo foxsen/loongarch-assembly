@@ -6,7 +6,7 @@
 
 克隆本项目的代码之后，再下载编译工具链和qemu模拟器：
 
-    wget -c https://github.com/foxsen/qemu-loongarch-runenv/releases/download/toolchain/loongarch64-clfs-2021-12-18-cross-tools-gcc-full.tar.xz
+    wget -c https://github.com/sunhaiyong1978/CLFS-for-LoongArch/releases/download/untagged-629b3c005484675292bc/loongarch64-clfs-3.0-cross-tools-gcc-glibc.tar.xz
     wget -c https://github.com/foxsen/loongarch-assembly/releases/download/qemu/qemu-6.2.50.loongarch64.tar.gz
 
 使用如下命令可以生成一个docker镜像：
@@ -16,7 +16,7 @@
 然后，用docker run -it loongarch-assembly /bin/bash可以运行该环境，输入make编译和运行案例代码。
 
 可以从docker hub直接下载制作好的镜像文件：
-    docker pull foxsen76/loongarch-assembly
+    docker pull foxsen76/loongarch-assembly:v2
 
 ## 案例
 
@@ -27,6 +27,10 @@
 ### bubble-sort.S
 
 冒泡排序实现
+
+### inline-assembly.c
+
+行内汇编示例
 
 ## 参考资料
 
